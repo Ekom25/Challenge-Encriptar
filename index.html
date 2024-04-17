@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador-Challenge</title>
+    <link rel="stylesheet" href="style-encriptador.css">
+<title>Encriptador-Challenge</title>
+</head>
+
+<body>
+    <div class="container"> 
+        <div class="container__contenido"> 
+            <div class="container__informaciones"> 
+                <div class="fondo-general">
+                    <img class="alura" src="img-challenge-encriptar/Logo-alura(1).png"> 
+                </div>                       
+                        <div class="cuadro-encriptar">
+                            <textarea id="mensaje-usuario" class="input-padron" oninput="mostrarTexto()" required placeholder="Ingrese el texto"></textarea>
+                        </div>
+                <div class="botones"> 
+                    <p class="advertencia">&#x26a0 Solo letras minúsculas y sin acentos.</p> 
+                    <button onclick="enviarInformacion1()" type="submit" value="Encriptar" id="textoEncriptar" class="boton-encriptar"><strong>Encriptar</strong></button> 
+                    <button onclick="enviarInformacion2()" type="submit" value="Desencriptar" id="textoDesencriptar" class="boton-desencriptar"><strong>Desencriptar</strong></button> 
+                </div>
+
+                <div id="rectangulo-blanco" class="rectangulo-blanco">
+                    <img id="muneco"  class="muneco" src="img-challenge-encriptar/Muñeco.png">
+                    <h2>Ningún mensaje fue encontrado.</h2>
+                    <p class="aviso-texto">Ingresa el texto que desee increptar o desencriptar</p>
+                </div>
+
+                <div id="cuadroMensaje" class="oculto">
+                    
+                </div> 
+
+                <footer>
+                    <p class="leyenda">Programa ONE (Oracle - Alura) - Estudiante: Enrique C. - 2024</p> 
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script src="Codigo-encirptador.js"></script>
+</body>
+
+</html>
+
+        
+        
+
+        
